@@ -1,16 +1,54 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This is a simple personal portfolio website built with React.js , a UI/UX Designer. It includes sections like Hero (introduction), About, Projects, Testimonials, and Footer with navigation and social links.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Responsive design for mobile and desktop
+- Hero section with profile image and bio
+- About section with skills progress bars
+- Projects section with category filtering
+- Testimonials section with quotes
+- Footer with navigation and social media links
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```
+   cd portfolio
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage
+
+1. Start the development server:
+   ```
+   npm start
+   ```
+2. Open `http://localhost:3000` in your browser.
+
+## Components
+
+- **Hero**: Introduction and hire button
+- **About**: Bio and skills
+- **Projects**: Filterable project grid
+- **Testimonials**: Client quotes
+- **Footer**: Navigation and social links
+
+## Dependencies
+
+- React.js
+- Tailwind CSS (for styling)
+
+## License
+
+MIT License. See [LICENSE](LICENSE) for details.
