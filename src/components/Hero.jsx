@@ -11,22 +11,22 @@ const Hero = ({
   buttonText = "Hire Me",
   socialLinks = [
     {
-      icon: "/icons/Vector.png",
+      icon: `${import.meta.env.BASE_URL}/icons/Vector.png`,
       href: "https://facebook.com/yourhandle",
       label: "Facebook",
     },
     {
-      icon: "/icons/Vector(1).png",
+      icon: `${import.meta.env.BASE_URL}icons/Vector(1).png`,
       href: "https://twitter.com/yourhandle",
       label: "Twitter",
     },
     {
-      icon: "/icons/Vector(2).png",
+      icon: `${import.meta.env.BASE_URL}icons/Vector(2).png`,
       href: "https://instagram.com/yourhandle",
       label: "Instagram",
     },
     {
-      icon: "/icons/Vector(3).png",
+      icon: `${import.meta.env.BASE_URL}icons/Vector(3).png`,
       href: "https://linkedin.com/in/yourhandle",
       label: "LinkedIn",
     },

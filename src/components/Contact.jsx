@@ -1,28 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Contact = ({
   title = "Lets Design Together",
-  bio = "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium"
+  bio = "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium",
 }) => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Submitted:', email); // Integrate with email API (e.g., Formspree)
-    setEmail('');
+    console.log("Submitted:", email); // Integrate with email API (e.g., Formspree)
+    setEmail("");
   };
 
   return (
     <section id="contact" className="py-16 bg-gray-50">
       <div className="text-center space-y-4 mb-8">
         <h2 className="text-4xl font-bold text-gray-900">{title}</h2>
-        <p className="text-gray-600 text-sm leading-relaxed max-w-2xl mx-auto">{bio}</p>
+        <p className="text-gray-600 text-sm leading-relaxed max-w-2xl mx-auto">
+          {bio}
+        </p>
       </div>
-      
+
       {/* Form */}
-      <form onSubmit={handleSubmit} className="max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
-        <input 
-          type="email" 
+      <form
+        onSubmit={handleSubmit}
+        className="max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4"
+      >
+        <input
+          type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter Your Email"
@@ -30,7 +35,7 @@ const Contact = ({
           required
           aria-label="Enter your email"
         />
-        <button 
+        <button
           type="submit"
           className="px-6 py-3 text-white bg-orange-500 rounded-md font-medium hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all duration-200 shadow-sm"
         >

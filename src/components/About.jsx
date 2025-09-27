@@ -26,7 +26,7 @@ const About = ({
             <img
               src={overlayImage}
               alt="Overlay on profile image"
-              className="absolute top-12 left-0 w-full h-10 opacity-90 md:top-7"
+              className="absolute top-12 left-0 w-full h-10 opacity-90 md:top-9"
               loading="lazy"
             />
           </div>

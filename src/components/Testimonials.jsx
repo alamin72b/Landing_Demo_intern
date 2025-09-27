@@ -1,20 +1,23 @@
-import React from 'react';
+import React from "react";
 
 const Testimonials = ({
   title = "Testimonials",
   bio = "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium",
   testimonial = {
-    quote: "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor quisque quis dui.",
+    quote:
+      "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor quisque quis dui.",
     name: "Name",
     role: "CEO",
-    photo: "/images/testimonial-photo.jpg" // Surfer guy in hat
-  }
+    photo: `${import.meta.env.BASE_URL}images/testimonial-photo.jpg`,
+  },
 }) => {
   return (
     <section id="testimonials" className="py-16 bg-gray-50">
       <div className="text-center space-y-4 mb-12">
         <h2 className="text-4xl font-bold text-gray-900">{title}</h2>
-        <p className="text-gray-600 text-sm leading-relaxed max-w-2xl mx-auto">{bio}</p>
+        <p className="text-gray-600 text-sm leading-relaxed max-w-2xl mx-auto">
+          {bio}
+        </p>
       </div>
       {/* Testimonial Card */}
       <div className="max-w-2xl mx-auto bg-white rounded-lg p-6 shadow-sm relative">
@@ -33,7 +36,9 @@ const Testimonials = ({
             <blockquote className="text-gray-600 text-sm leading-relaxed inline">
               {testimonial.quote}
             </blockquote>
-            <h3 className="text-lg font-semibold text-gray-800 mt-2">{testimonial.name}</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mt-2">
+              {testimonial.name}
+            </h3>
             <p className="text-sm text-gray-500">{testimonial.role}</p>
           </div>
         </div>
