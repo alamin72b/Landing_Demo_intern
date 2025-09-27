@@ -17,11 +17,11 @@ This is a simple personal portfolio website built with React.js , a UI/UX Design
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/alamin72b/Landing_Demo_intern
    ```
 2. Navigate to the project directory:
    ```
-   cd portfolio
+   cd Landing_Demo_intern
    ```
 3. Install dependencies:
    ```
